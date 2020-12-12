@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <title>Contact Information</title>
+</head>
+<body>
+  <img src="ob3.png" alt="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 border-right">
+        <p>Step 1 > payment</p>
+        <p class="mt-4 h4">Express Checkout</p>
+        <form action="/pay" method="post">
+          <button class="btn btn-primary">shopPay</button>
+          <input type="submit" class="btn btn-warning" value="PayPal">
+          <button class="btn btn-dark">GPay</button>
+          <button class="btn btn-warning">amazon pay</button>
+        </form>
+        <hr>
+        <p>Or pay with Card by clicking the button below</p>
+        <form action="/charge" method="POST">
+          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_51HjNDBFZJ9xrXUICqoyFaTGD8aBPK0z25oUfu21jX9Z1M9zw5AUUROYZMjBOHFZGstij4GUWaKyTJUHvk1J0ts7u00FXNcJ6ic"
+            data-amount="1000"
+            data-name="Web Development Donate"
+            data-description="Obama Donate"
+            data-image="/ob.png"
+            data-locale="auto">
+          </script>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-8">
+            <span class="font-weight-bold">One-time Donation</span><br>
+            <span>$10 Donation</span><br>
+            <span class="font-weight-bold">Fee Coverage</span><br>
+            <span>Processing fees for a $10 donation</span>
+          </div>
+          <div class="col-md-4">
+            <p>$10</p>
+            <p>$0.60</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-8">
+            Total
+          </div>
+          <div class="col-md-4">
+            USD $10.60
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
